@@ -1,0 +1,32 @@
+* Files:
+There is only one file for this application called VelvetJ.jar which is an executable java file. The target PC need to be installed the velvet then this application can be normally executed. The result will be recorded under the Path: ~/Desktop/DoneVV/
+
+* Main Purpose:
+This application provides the visual graphic interface for the velvet. It is able to set all the parameters for velvet and will display a chart which represents the result from the output. 
+
+* Functions and Parameters:
+There are 4 main buttons on the GUI
+The "Open" button is used to open a new target file.
+The "Recalculate" button is used to calulate the current selected target file with different parameters. 
+The "Reset" button is used to reset all the parameters to default values.
+The "Quit" button is used to quit the application.
+
+The "Format" paremeter is used to specify the format of the input file for velveth. There are fasta, fastq, fasta.gz, fastq.gz, eland, gerald for options. The default one is fastq.
+
+The "Type" parameter is used to specify the type of sequence of the input file for velveth. There are short, shortPaired, short2, shortPaired2, long, longPaired for options. The default one is short.
+
+The "Hash #" paremeter is used to set the hash value for the velveth. The domain of the hash value is from 21 to 31. The default value is 21.
+
+The "min_contig_lgth" parameter is used to set the value of min_contig_lgth for velvetg. The default value is none.
+
+The "cov_cut", "max_cov", "exp_cov" parameters are used to set the parameter value of cov_cutoff, max_coverage and exp_cov. The default for these three parameters are none and all of them can be setted as "auto".
+
+The "ins_length", "ins_length_long", "ins_length2", "ins_length_long_sd" parameters are used to set the value for insert-length for velvetg. The default value of them are none. 
+
+The "read_trkg" option is used to determine whether using read tracking. The default value is "no".
+ 
+The "amos_file" option is used to determine whether producing an .afg file. The default value is "no".
+
+The "unused_reads" option is used to determine whether obtaining reads unused in the assembly. The default value is "no".
+
+The chart shows the result graphically. The values on the x axis represent the length of contig and values on the y axis represent the total number of contigs for each length on the x axis. It is able to zoom in and zoom out by selecting any area on the chart.
